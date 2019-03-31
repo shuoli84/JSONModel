@@ -17,7 +17,7 @@
     if (self.isIndex) [properties addObject:@"Index"];
 #pragma GCC diagnostic pop
 
-    if (self.isOptional) [properties addObject:@"Optional"];
+    if (self.isOptional) [properties addObject:@"JMOptional"];
     if (self.isMutable) [properties addObject:@"Mutable"];
     if (self.isStandardJSONType) [properties addObject:@"Standard JSON type"];
     if (self.customGetter) [properties addObject:[NSString stringWithFormat: @"Getter = %@", NSStringFromSelector(self.customGetter)]];
